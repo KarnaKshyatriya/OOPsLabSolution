@@ -27,27 +27,27 @@ public class Lab1 {
         switch (choice) {
             case 1:
                 Department department = new Department("Technical");
-                String email = eService.generateEmail(employee, department);
+                String email = eService.generateEmailAddress(employee, department);
                 System.out.println("Dear " + fName + " Your generated credentials are as follows: ");
-                System.out.println("Email ---> " + email + "\n" + "Password --->" + eService.getPassword());
+                System.out.println("Email ---> " + email + "\n" + "Password --->" + eService.generatePassword());
                 break;
             case 2:
                 Department department1 = new Department("Admin");
-                String email1 = eService.generateEmail(employee, department1);
+                String email1 = eService.generateEmailAddress(employee, department1);
                 System.out.println("Dear " + fName + " Your generated credentials are as follows: ");
-                System.out.println("Eamil ---> " + email1 + "\n" + "Password --->" + eService.getPassword());
+                System.out.println("Eamil ---> " + email1 + "\n" + "Password --->" + eService.generatePassword());
                 break;
             case 3:
-                Department department2 = new Department("Human Resource");
-                String email2 = eService.generateEmail(employee, department2);
+                Department department2 = new Department("Human_Resource");
+                String email2 = eService.generateEmailAddress(employee, department2);
                 System.out.println("Dear " + fName + " Your generated credentials are as follows: ");
-                System.out.println("Eamil ---> " + email2 + "\n" + "Password --->" + eService.getPassword());
+                System.out.println("Eamil ---> " + email2 + "\n" + "Password --->" + eService.generatePassword());
                 break;
             case 4:
                 Department department3 = new Department("Human Resource");
-                String email3 = eService.generateEmail(employee, department3);
+                String email3 = eService.generateEmailAddress(employee, department3);
                 System.out.println("Dear " + fName + " Your generated credentials are as follows: ");
-                System.out.println("Eamil ---> " + email3 + "\n" + "Password --->" + eService.getPassword());
+                System.out.println("Eamil ---> " + email3 + "\n" + "Password --->" + eService.generatePassword());
                 break;
             default:
                 System.out.println("Invalid Choice. Error in logic");

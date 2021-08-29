@@ -22,12 +22,12 @@ public class EmailService {
 
     String values = capitalLetters + smallLetters + numbers + specialCharacters;
 
-    public String generateEmail(Employee employee, Department department) {
+    public String generateEmailAddress(Employee employee, Department department) {
         String email = employee.getFirstName() + employee.getLastName() + "@" + department.getDepartment() + ".email.com";
         return email;
     }
 
-    public String getPassword() {
+    public String generatePassword() {
         Random random = new Random();
         char[] pass = new char[8];
         for (int i = 0; i < pass.length; i++) {
